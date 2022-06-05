@@ -1,0 +1,44 @@
+package ru.geekbrains.sharov.lesson2;
+
+// made by: Maksim
+
+public class Lesson2App {
+    public static void main(String[] args) {
+        Task1(7,8); // Задание 1
+        Task2(); // Задание 2
+        Task3(14); // Задание 3
+        Task4("Строка",9); // Задание 4
+    }
+    public static void Task1(int a, int b) { //метод, принимающий на вход два целых числа и проверяющий, что их сумма лежит в пределах от 10 до 20 (включительно), если да – вернуть true, в противном случае – false.
+        int c = a + b;
+        boolean Test = (c > 10 && c <= 20);
+        System.out.println(Test);
+    }
+    public static void Task2() { //Написать метод, которому в качестве параметра передается целое число, метод должен напечатать в консоль, положительное ли число передали или отрицательное. Замечание: ноль считаем положительным числом.
+        int a = 0;
+        if (a < 0) {
+            System.out.println("Число отрицательное");
+        }
+        else {
+            System.out.println("Число положительное");
+        }
+        }
+
+        public static void Task3(int a){ //Написать метод, которому в качестве параметра передается целое число. Метод должен вернуть true, если число отрицательное, и вернуть false если положительное
+        boolean Number = (a < 0);
+        System.out.println(Number);
+        }
+
+        public static void Task4(String str, int n) { //Написать метод, которому в качестве аргументов передается строка и число, метод должен отпечатать в консоль указанную строку, указанное количество раз
+            for (int i = 1; i <= n; i++) {
+                System.out.println("[" + i + "]" + " " + str);
+            }
+        }
+}
+
+
+
+
+
+
+
